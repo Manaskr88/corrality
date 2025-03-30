@@ -21,7 +21,7 @@ type menuItem = {
   description: string;
 }
 
-const brandName = "Corrality";
+const brandName = "Tech & Vibe";
 
 const mobileNavMenuItems: menuItem[] = [
   {
@@ -83,8 +83,8 @@ const MobileNav = (
         </SheetTrigger>
         
         <SheetContent>
-          <DialogTitle hidden={true}>Corrality</DialogTitle>
-          <SheetHeader>Corrality <SheetClose></SheetClose></SheetHeader>
+          <DialogTitle hidden={true}>{brandName}</DialogTitle>
+          <SheetHeader>{brandName} <SheetClose></SheetClose></SheetHeader>
           {
             mobileNavMenuItems.map((item) => (
               <Link key={item.title} href={item.href} prefetch={true}>{item.title}</Link>
